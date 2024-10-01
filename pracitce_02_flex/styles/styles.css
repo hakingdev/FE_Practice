@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+:root {
+    --Paragraph: #32403B;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.mainContainer {
+    /*display: flex;*/
+    background-color: #A7D7C5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: auto;
+}
+
+.square-first {
+    position: absolute;
+    top: -40%;
+    left: -5%;
+    background-color: #eff2f1;
+    width: 750px;
+    height: 750px;
+    border-radius: 160px;
+    /*flex-shrink: 0;*/
+    transform: rotate(-45deg);
+    opacity: 40%;
+}
+
+.square-second {
+    position: absolute;
+    top: 70%;
+    right: 0;
+    background-color: #eff2f1;
+    width: 750px;
+    height: 750px;
+    border-radius: 160px;
+    /*flex-shrink: 0;*/
+    transform: rotate(-45deg);
+    opacity: 40%;
+}
+
+.form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 49px;
+    max-width: 698px;
+    height: 900px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.form-container h1 {
+    text-align: center;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    margin-bottom: 20px;
+}
+
+.form-container > p {
+    color: var(--Paragraph);
+    text-align: center;
+    width: 472px;
+    margin: 0 auto 30px;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29.914px;
+}
+
+.input-group__user-name {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group__tel {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group__tel input:nth-child(1) {
+    flex-shrink: 3;
+}
+
+.form-container p:nth-child(4) {
+    color: var(--Paragraph);
+    margin-bottom: 15px;
+}
+
+.form-container p:nth-child(6) {
+    color: var(--Paragraph);
+    margin-bottom: 15px;
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"],
+.input-group__tel input[type="tel"],
+.input-group__user-name input[type="text"] {
+    width: 100%;
+    padding: 20px 31px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    margin-bottom: 10px;
+}
+
+.input-group__radio {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+input[type=radio] {
+    appearance: none;
+    border: 1px solid darkgray;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: #84C7AE;
+    border-radius: 50%;
+    border: 2px solid white;
+/
+}
+
+.submit {
+    display: block;
+    border: none;
+    color: #fff;
+    background-color: #84C7AE;
+    padding: 25px 74px;
+    border-radius: 24px;
+    cursor: pointer;
+    margin: 0 auto 20px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 43px;
+    font-weight: 700;
+}
+
+.container a{
+    color: var(--Paragraph);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-decoration: underline;
+}
+
+
+
+
+
